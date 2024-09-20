@@ -62,12 +62,12 @@ class _SignupPageState extends ConsumerState<SignupPage> {
             body: isLoading
                 ? const Loader()
                 : Padding(
-                        padding: const EdgeInsets.all(15.0),
+                        padding: const EdgeInsets.all(20.0),
                         // K_24919 child 单数，一个成员
                         child: Form(
                             key: formKey,
                             child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
+                                mainAxisAlignment: MainAxisAlignment.center, // K_24920 `主轴对齐` 垂直方向居中
                                 // K_24919 children 复数，多个成员
                                 children: [
                                     const Text(
